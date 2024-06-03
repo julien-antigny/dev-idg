@@ -1,0 +1,35 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.fade-in {
+    animation: fadeIn 3s forwards;
+}
+
+#NavLargeScreen {
+    position: fixed;
+    width: 100%;
+    background-color: #0E1531;
+    z-index: 99;
+}
+
+#NavLargeScreen img {
+    margin: 20px 0 20px 5%;
+    height: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #NavLargeScreen img {
+        margin: 20px 0 20px 5%;
+        height: 30px;
+    }
+}

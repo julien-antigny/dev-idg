@@ -1,0 +1,14 @@
+#ChoixBento {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-left: 15%;
+}
+
+#ChoixBento h2 {
+    font-size: 64px;
+}
+
+#ChoixBento ol {
+    font-size: 24px;
+}

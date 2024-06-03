@@ -1,0 +1,72 @@
+.tile {
+    width: 70%;
+    padding-left: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.tilephone {
+    display: none;
+}
+
+.tile img {
+    width: 500px;
+    height: 100%;
+}
+
+.tile.left div {
+    margin-left: 50px;
+}
+
+.tile.right div {
+    margin-right: 50px;
+}
+
+.tile div h4 {
+    font-size: 64px;
+}
+
+.tile div p {
+    font-size: 28px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .tile {
+        display: none;
+    }
+
+    .tilephone {
+        width: 70%;
+        margin-left: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tilephone h4 {
+        font-size: 40px;
+    }
+
+    .tilephone img {
+        width: 60%;
+    }
+
+    .tilephone p {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .tilephone h4 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .tilephone img {
+        width: 80%;
+    }
+
+    .tilephone p {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#Padding {
+    height: 150px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #Padding {
+        height: 75px;
+    }
+}
+
+/* POLICES */
+@font-face {
+    font-family: "Nunito";
+    src: url("../assets/police/Nunito-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Satisfy";
+    src: url("../assets/police/Satisfy-Regular.ttf");
+}
+
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nunito {
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.playfair-display {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
