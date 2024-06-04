@@ -3,6 +3,7 @@
     padding-left: 15%;
     display: flex;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .tilephone {
@@ -12,6 +13,22 @@
 .tile img {
     width: 500px;
     height: 100%;
+}
+
+.tile div {
+    display: flex;
+    flex-direction: column;
+}
+
+.tile div h4{
+    margin: 0;
+}
+.tile.left button {
+    margin-left: auto;
+}
+
+.tile.right button {
+    margin-right: auto;
 }
 
 .tile.left div {
@@ -28,6 +45,50 @@
 
 .tile div p {
     font-size: 28px;
+}
+
+.interested_button {
+    border-radius: 1.458em;
+    color: #b28564;
+    background-color: transparent;
+    font-size: 24px;
+    padding: 15px 30px;
+    border: 3px solid #b28564;
+    margin-top: 20px;
+}.interested_button:hover {
+    background-color: #b28564;
+    color: white;
+}
+
+#PopupSocialNetwork {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position:fixed;
+    width: 40%;
+    height: 40vh;
+    margin: calc(30vh + 50px) 30% calc(30vh - 50px) 30%;
+    background-color: white;
+    border: 1px solid #D4AF37;
+}
+
+#PopupSocialNetwork div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#PopupSocialNetwork p {
+    font-size: 32px;
+}
+
+#PopupSocialNetwork div img {
+    width: 100px;
+    margin: 0 20px;
+}
+
+#Cross {
+    margin-left: auto;
+    margin-right: 50px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -54,6 +115,27 @@
     .tilephone p {
         font-size: 24px;
     }
+
+    .interested_button {
+        font-size: 20px;
+    }
+
+    #PopupSocialNetwork {
+        display: none;
+        width: 80%;
+        height: 40vh;
+        margin: calc(30vh + 50px) 10% calc(30vh - 50px) 10%;
+    }
+
+    #PopupSocialNetwork p {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #PopupSocialNetwork div img {
+        margin-top: 50px;
+    }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -68,5 +150,21 @@
 
     .tilephone p {
         font-size: 16px;
+    }
+
+    .interested_button {
+        font-size: 16px;
+    }
+
+    #PopupSocialNetwork p {
+        font-size: 20px;
+    }
+
+    #PopupSocialNetwork div img {
+        width: 50px;
+    }
+
+    #Cross {
+        margin-right: 20px;
     }
 }

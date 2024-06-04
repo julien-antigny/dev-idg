@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -15,9 +16,44 @@
 <body id="MainBody" class="hidden">
     <header>
         <nav id="NavLargeScreen">
-            <a href="index.html"><img src="assets/logo/nav.png"></a>
+            <a href="index.html">
+                <img src="assets/img/logo/instants_de_gourmandise_letters.png">
+            </a>
+
+            <div class="nunito">
+                <p><a href="box.html">Brunch</a></p>
+                <p><a href="gateauxorientaux.html">Gâteaux orientaux</a></p>
+                <p><a href="bento_cupcake.html">Bento & cupcakes</a></p>
+                <p><a href="brownies_cookies.html">Brownies & Cookies</a></p>
+            </div>
+        </nav>
+
+        <nav id="NavPhone">
+            <div id="LogoPhone">
+                <a href="index.html">
+                    <img src="assets/img/logo/instants_de_gourmandise_letters.png">
+                </a>
+                <i class="fa fa-bars" onclick="openMenu()"></i>
+            </div>
+
+            <div id="MenuPhone" class="nunito">
+                <p>Brunch</p>
+                <p>Gâteaux orientaux</p>
+                <p>Bento & cupcakes</p>
+                <p>Brownies & Cookies</p>
+            </div>
         </nav>
     </header>
+
+    <div id="PopupSocialNetwork">
+        <p id="Cross" onclick="closePopUp()">&#10005</p>
+        <p>Nous contacter sur Instagram ou TikTok !</p>
+
+        <div>
+            <a href="https://www.instagram.com/instants.de.gourmandise/"><img src="assets/img/logo/insta.jpeg"></a>
+            <a href="https://www.tiktok.com/@instants.gourmandise"><img src="assets/img/logo/tiktok.png"></a>
+        </div>
+    </div>
 
 
     <div id="Padding"></div>
@@ -28,7 +64,8 @@
 
         <div>
             <h4 class="satisfy-regular">Pizza cookies façon Cédric Grolet</h4>
-            <p class="nunito">Douceur inspirée pour que tout le monde puisse y gouter ! Son praliné pistache et noisette sont là pour vous chouchouter ! Son caramel beurre salé saura vous bercer ! Ceci est une promesse de vous régalez ! </p>
+            <p class="nunito">Douceur inspirée pour que tout le monde puisse y gouter ! Son praliné pistache et noisette sont là pour vous chouchouter ! Son caramel beurre salé saura vous bercer ! Ceci est une promesse de vous régalez !</p>
+            <button class="interested_button" onclick="openPopUp()">Intéressé(e)</button>
         </div>
     </section>
 
@@ -36,6 +73,7 @@
         <h4 class="satisfy-regular">Pizza cookies façon Cédric Grolet</h4>
         <img src="assets/img/brownies_cookies/pizza_cookies.png">
         <p class="nunito">Douceur inspirée pour que tout le monde puisse y gouter ! Son praliné pistache et noisette sont là pour vous chouchouter ! Son caramel beurre salé saura vous bercer ! Ceci est une promesse de vous régalez ! </p>
+        <button class="interested_button" onclick="openPopUp()">Intéressé(e)</button>
     </section>
 
 
@@ -44,6 +82,7 @@
         <div>
             <h4 class="satisfy-regular">Brownies</h4>
             <p class="nunito">Un brownie bien chocolaté pour dessiner sur votre visage un sourire émerveillé, moelleux et succulent tout en étant bien croustillant !</p>
+            <button class="interested_button" onclick="openPopUp()">Intéressé(e)</button>
         </div>
 
         <img src="assets/img/brownies_cookies/brownies.png">
@@ -53,6 +92,7 @@
         <h4 class="satisfy-regular">Brownies</h4>
         <img src="assets/img/brownies_cookies/brownies.png">
         <p class="nunito">Un brownie bien chocolaté pour dessiner sur votre visage un sourire émerveillé, moelleux et succulent tout en étant bien croustillant !</p>
+        <button class="interested_button" onclick="openPopUp()">Intéressé(e)</button>
     </section>
 
 
@@ -63,6 +103,7 @@
         <div>
             <h4 class="satisfy-regular">Cookies façon Cédric Grolet</h4>
             <p class="nunito">Une box de cookies moelleux et gôuteux pour vous ou votre proche le plus chanceux</p>
+            <button class="interested_button" onclick="openPopUp()">Intéressé(e)</button>
         </div>
     </section>
 
@@ -70,6 +111,7 @@
         <h4 class="satisfy-regular">Cookies façon Cédric Grolet</h4>
         <img src="assets/img/brownies_cookies/cookies.png">
         <p class="nunito">Une box de cookies moelleux et gôuteux pour vous ou votre proche le plus chanceux</p>
+        <button class="interested_button" onclick="openPopUp()">Intéressé(e)</button>
     </section>
 
 
@@ -78,6 +120,7 @@
         <div>
             <h4 class="satisfy-regular">Pizza moelleux au chocolat</h4>
             <p class="nunito">Une pizza moelleux qui a été créée pour les amoureux du chocolat. Un caramel beurre salé ou encore un praliné, tout est fait avec amour pour émerveiller votre palais !  </p>
+            <button class="interested_button" onclick="openPopUp()">Intéressé(e)</button>
         </div>
 
         <img src="assets/img/brownies_cookies/pizza_moelleux.png">
@@ -87,18 +130,20 @@
         <h4 class="satisfy-regular">Pizza moelleux au chocolat</h4>
         <img src="assets/img/brownies_cookies/pizza_moelleux.png">
         <p class="nunito">Une pizza moelleux qui a été créée pour les amoureux du chocolat. Un caramel beurre salé ou encore un praliné, tout est fait avec amour pour émerveiller votre palais !  </p>
+        <button class="interested_button" onclick="openPopUp()">Intéressé(e)</button>
     </section>
-
 
 
     <footer style="margin-top: 100px">
         <img src="assets/img/bow.png">
 
         <div>
-            <img src="assets/logo/nav.png">
+            <img src="assets/img/logo/instants_de_gourmandise_letters.png">
         </div>
     </footer>
 
     <script src="js/init_body.js"></script>
+    <script src="js/popup_social_network.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>

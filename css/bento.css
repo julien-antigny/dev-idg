@@ -12,3 +12,11 @@
 #ChoixBento ol {
     font-size: 24px;
 }
+
+@media only screen and (max-width: 1024px) {
+    #ChoixBento {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

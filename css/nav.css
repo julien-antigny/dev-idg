@@ -16,20 +16,79 @@
 }
 
 #NavLargeScreen {
-    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
     width: 100%;
-    background-color: #0E1531;
+    background-color: #140057;
     z-index: 99;
+    color: white;
+    transition: all 3s;
 }
 
-#NavLargeScreen img {
-    margin: 20px 0 20px 5%;
+#NavLargeScreen a img {
+    margin: 20px 0 20px 20%;
     height: 50px;
 }
 
+#NavLargeScreen div {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 60%;
+    font-size: 20px;
+    margin-right: 5%;
+}
+
+#NavLargeScreen div p {
+    margin-left: 3%;
+}
+
+#NavPhone {
+    display: none;
+}
+
 @media only screen and (max-width: 1024px) {
-    #NavLargeScreen img {
+    #NavLargeScreen {
+        display: none;
+    }
+
+    #NavPhone {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        color: white;
+        background-color: #140057;
+        z-index: 99;
+    }
+
+    #NavPhone #LogoPhone {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #NavPhone #LogoPhone img {
         margin: 20px 0 20px 5%;
-        height: 30px;
+        height: 25px;
+    }
+
+    #NavPhone #MenuPhone {
+        display: none;
+        position: fixed;
+        width: 100%;
+        top: 65px;
+        text-align: center;
+        background-color: #140057;
+        font-size: 20px;
+        height: calc(100vh - 65px);
+    }
+
+    .fa.fa-bars {
+        margin-right: 5%;
     }
 }

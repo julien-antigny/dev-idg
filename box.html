@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/flayer.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tile.css">
 
     <title>Instants de gourmandise - Box</title>
 </head>
@@ -16,10 +18,43 @@
     <header>
         <nav id="NavLargeScreen">
             <a href="index.html">
-                <img src="assets/logo/nav.png">
+                <img src="assets/img/logo/instants_de_gourmandise_letters.png">
             </a>
+
+            <div class="nunito">
+                <p><a href="box.html">Brunch</a></p>
+                <p><a href="gateauxorientaux.html">Gâteaux orientaux</a></p>
+                <p><a href="bento_cupcake.html">Bento & cupcakes</a></p>
+                <p><a href="brownies_cookies.html">Brownies & Cookies</a></p>
+            </div>
+        </nav>
+
+        <nav id="NavPhone">
+            <div id="LogoPhone">
+                <a href="index.html">
+                    <img src="assets/img/logo/instants_de_gourmandise_letters.png">
+                </a>
+                <i class="fa fa-bars" onclick="openMenu()"></i>
+            </div>
+
+            <div id="MenuPhone" class="nunito">
+                <p>Brunch</p>
+                <p>Gâteaux orientaux</p>
+                <p>Bento & cupcakes</p>
+                <p>Brownies & Cookies</p>
+            </div>
         </nav>
     </header>
+
+    <div id="PopupSocialNetwork">
+        <p id="Cross" onclick="closePopUp()">&#10005</p>
+        <p>Nous contacter sur Instagram ou TikTok !</p>
+
+        <div>
+            <a href="https://www.instagram.com/instants.de.gourmandise/"><img src="assets/img/logo/insta.jpeg"></a>
+            <a href="https://www.tiktok.com/@instants.gourmandise"><img src="assets/img/logo/tiktok.png"></a>
+        </div>
+    </div>
 
     <div class="satisfy-regular flayer_cat">Box sucrées</div>
 
@@ -66,6 +101,10 @@
         </div>
     </section>
 
+    <div style="display: flex; justify-content: center">
+        <button class="interested_button" onclick="openPopUp()">Intéressé(e)</button>
+    </div>
+
     <div id="BoxSalées" class="satisfy-regular flayer_cat">Box salées</div>
 
     <section class="flayer_presentation">
@@ -104,6 +143,10 @@
             </p>
         </div>
     </section>
+
+    <div style="display: flex; justify-content: center">
+        <button class="interested_button" onclick="openPopUp()">Intéressé(e)</button>
+    </div>
 
     <div id="BoxSaléesSucrées" class="satisfy-regular flayer_cat">Box salées sucrées</div>
 
@@ -191,6 +234,10 @@
         </div>
     </section>
 
+    <div style="display: flex; justify-content: center">
+        <button class="interested_button" onclick="openPopUp()">Intéressé(e)</button>
+    </div>
+
     <div id="Brunch" class="satisfy-regular flayer_cat">Brunch</div>
 
     <section class="flayer_presentation" style="margin-bottom: 50px;">
@@ -268,16 +315,22 @@
         </div>
     </section>
 
+    <div style="display: flex; justify-content: center">
+        <button class="interested_button" onclick="openPopUp()">Intéressé(e)</button>
+    </div>
+
 </div>
 
     <footer style="margin-top: 150px">
         <img src="assets/img/bow.png">
 
         <div>
-            <img src="assets/logo/nav.png">
+            <img src="assets/img/logo/instants_de_gourmandise_letters.png">
         </div>
     </footer>
 
     <script src="js/init_body.js"></script>
+    <script src="js/popup_social_network.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>
